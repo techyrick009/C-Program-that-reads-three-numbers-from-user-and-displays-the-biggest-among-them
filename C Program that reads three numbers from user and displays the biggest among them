@@ -1,0 +1,38 @@
+
+/*
+ Copyright   : Techyrick.com
+ Description : C Program that reads three numbers from user and displays the
+ biggest among them
+ ============================================================================
+ */
+
+#include<stdio.h>
+int main(void) {
+
+	int a, b, c, biggest_no = 0;
+
+	printf("C Program to find Biggest among three numbers :");
+	printf("\nEnter No. A : ");
+	scanf("%d", &a);
+
+	printf("Enter No. B : ");
+	scanf("%d", &b);
+
+	printf("Enter No. C : ");
+	scanf("%d", &c);
+
+	if ((a >= b) && (a >= c)) {
+		biggest_no = a;
+	} else if ((b >= a) && (b >= c)) {
+		biggest_no = b;
+	}
+
+	else {
+		biggest_no = c;
+	}
+
+	printf("\n The Biggest Number among %d,%d,%d is %d", a, b, c, biggest_no);
+
+	return 0;
+}
+
